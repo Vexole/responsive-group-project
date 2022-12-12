@@ -205,14 +205,71 @@ h2 {
 /*
     Body
 */
+#collections_container,
+#top_selling_container,
+#official_merchandise_container {
+  text-align: center;
+  width: 96%;
+  margin: auto;
+}
+
+#collections {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: auto;
+  gap: 24px;
+}
+
+#official_merchandise {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#top_selling {
+  margin-top: 20px;
+  display: flex;
+  flex-basis: 350px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+#top_selling .items {
+  display: flex;
+  flex-direction: column;
+}
+
+#top_selling .items img {
+  max-width: 300px;
+}
+
+#top_selling .product_title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 4px 0;
+}
+
+#top_selling .description {
+  font-size: 0.9rem;
+}
+
+#top_selling .price {
+  font-size: 0.9rem;
+}
 
 #membership {
   text-align: center;
 }
 
+#collections_container h1,
+#official_merchandise_container h1,
+#top_selling_container h1,
 #membership h1 {
   padding: 20px;
-  font-size: clamp(1.5rem, 2vw - 1rem, 3rem);
+  font-size: clamp(1.5rem, 2vw - 1rem, 2.5rem);
 }
 
 /* 
@@ -344,6 +401,13 @@ th input {
 
   .hero {
     height: 91vh;
+  }
+
+  #collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
   }
 
   footer hr {
