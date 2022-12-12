@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobby Junction</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="top-nav">
+        <div>
+          <a href="/">HELLO</a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="/sale">SALES</a></li>
+          <li><a href="/signup">CREATE USERS</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/login">LOGIN</a></li>
+        </ul>
+      </section>
+    </header>
+    <div class="dashboard_slider">
+      <img src="./images/car.jpg" alt="photography" />
+      <img src="./images/car-dashboard.jpg" alt="photography" />
+      <img src="./images/car-test.jpg" alt="photography" />
+    </div>
+    <!-- the navigation is created here -->
+
+    <main>
+      <!-- it will bring back the user to top once clicked -->
+      <button id="go_to_top" title="Go to top">^</button>
+      <section id="hero_text_container"></section>
+
+      <section id="membership">
+        <h1>MEMBERSHIP</h1>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/members-desktop.webp"
+            alt="membership"
+          />
+          <img src="./images/members-mobile.webp" alt="membership" />
+        </picture>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="need_help">
+          <h1>NEED HELP</h1>
+          <ul>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="users.html">Track Order</a></li>
+            <li><a href="hobby.html">Returns & Refunds</a></li>
+            <li><a href="posts.html">FAQs</a></li>
+            <li><a href="posts.html">My Account</a></li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h1>COMPANY</h1>
+          <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="users.html">Careers</a></li>
+            <li><a href="hobby.html">Stores Near Me</a></li>
+            <li><a href="posts.html">From the Soul</a></li>
+            <li><a href="posts.html">Souled Army</a></li>
+          </ul>
+        </div>
+
+        <div class="more_info">
+          <h1>MORE INFO</h1>
+          <ul>
+            <li><a href="index.html">T&C</a></li>
+            <li><a href="users.html">Privacy Policy</a></li>
+            <li><a href="hobby.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="miscellaneous">
+          <ul>
+            <li><a href="index.html">COD Available</a></li>
+            <li><a href="users.html">30 Days Easy Returns</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="social_media">
+        <h1>FIND US ON</h1>
+        <div>
+          <a href="https://www.facebook.com/"
+            ><img src="./images/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/instagram.png" alt="instagram"
+          /></a>
+          <a href="https://twitter.com/home?lang=en"
+            ><img src="./images/twitter.png" alt="twitter"
+          /></a>
+          <a href="https://www.linkedin.com/in/bhupesh-shrestha-04/"
+            ><img src="./images/linkedin.png" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <p>Copyright &copy; 2022 | Hobby Junction</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- library plugin used in hobby.js -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/go_to_top.js"></script>
+  </body>
+</html>
