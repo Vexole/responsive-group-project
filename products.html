@@ -32,7 +32,7 @@
           <div class="menu-button"></div>
         </label>
         <ul class="menu">
-          <li><a href="/products.html">Products</a></li>
+          <li><a href="/sale">SALES</a></li>
           <li><a href="/signup">CREATE USERS</a></li>
           <li><a href="/logout">LOGOUT</a></li>
           <li><a href="/">HOME</a></li>
@@ -40,86 +40,68 @@
         </ul>
       </section>
     </header>
-    <div class="dashboard_slider">
-      <img src="./images/car.jpg" alt="photography" />
-      <img src="./images/car-dashboard.jpg" alt="photography" />
-      <img src="./images/car-test.jpg" alt="photography" />
-    </div>
-    <!-- the navigation is created here -->
-
     <main>
       <!-- it will bring back the user to top once clicked -->
       <button id="go_to_top" title="Go to top">^</button>
-      <section id="hero_text_container"></section>
 
-      <section id="collections_container">
-        <h1>COLLECTIONS</h1>
-        <div id="collections">
-          <div class="collection">
-            <img
-              src="/images/sweatshirts_and_sweaters.webp"
-              alt="sweatshirts and sweaters"
-            />
-          </div>
-          <div class="collection">
-            <img
-              src="/images/hoodies_and_jackets.webp"
-              alt="hoodies and jackets"
-            />
-          </div>
-          <div class="collection">
-            <img
-              src="/images/hardiks_collection.webp"
-              alt="hardiks collection"
-            />
-          </div>
-        </div>
+      <section id="hero_banner">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/sweaters_banner.webp"
+            alt="sweaters banner"
+          />
+          <img
+            src="./images/sweaters_banner_mobile.webp"
+            alt="sweaters banner"
+          />
+        </picture>
       </section>
 
-      <section id="official_merchandise_container">
-        <h1>OFFICIAL MERCHANDISE</h1>
-        <div id="official_merchandise">
-          <img src="/images/marvel.webp" alt="marvel" />
-          <img src="/images/friends.webp" alt="friends" />
-          <img src="/images/disnep.webp" alt="disnep" />
-          <img src="/images/netflix.webp" alt="netflix" />
-          <img src="/images/harry_potter.webp" alt="harry potter" />
+      <section id="selling_container">
+        <div></div>
+        <div id="selected_filters">
+            <p>Home / Sweatshirts and Sweaters</p>
+            <p>Sweatshirts and Sweaters - 76 items</p>
         </div>
-      </section>
+        <div id="filters">
+            <p>Gender</p>
+            <p>Themes</p>
+            <p>Sizes</p>
+        </div>
+        <div id="products_container">
+          <div id="products">
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
 
-      <section id="top_selling_container">
-        <h1>TOP SELLING</h1>
-        <div id="top_selling">
-          <div class="items">
-            <img src="/images/item1.webp" alt="Scooby Doo" />
-            <p class="product_title">Scooby Doo: Where Are You</p>
-            <hr />
-            <p class="description">Oversized T-shirts</p>
-            <p class="price">$20.99</p>
-          </div>
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
 
-          <div class="items">
-            <img src="/images/item1.webp" alt="Scooby Doo" />
-            <p class="product_title">Scooby Doo: Where Are You</p>
-            <hr />
-            <p class="description">Oversized T-shirts</p>
-            <p class="price">$20.99</p>
-          </div>
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
 
-          <div class="items">
-            <img src="/images/item1.webp" alt="Scooby Doo" />
-            <p class="product_title">Scooby Doo: Where Are You</p>
-            <hr />
-            <p class="description">Oversized T-shirts</p>
-            <p class="price">$20.99</p>
-          </div>
-
-          <div class="items">
-            <img src="/images/item1.webp" alt="Scooby Doo" />
-            <p class="product_title">Scooby Doo: Where Are You</p>
-            <hr />
-            <p class="description">Oversized T-shirts</p>
-            <p class="price">$20.99</p>
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
           </div>
         </div>
       </section>
