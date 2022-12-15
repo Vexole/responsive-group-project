@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Souled Store</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="top-nav">
+        <div>
+          <a href="/">The Souled Store</a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="/sale">SALES</a></li>
+          <li><a href="/signup">CREATE USERS</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/login">LOGIN</a></li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <!-- it will bring back the user to top once clicked -->
+      <button id="go_to_top" title="Go to top">^</button>
+      <section id="product_details_container">
+        <p>Home/Men's Jacket/Harry Potter/Harry Potter: Slytherin</p>
+
+        <section id="product_details">
+          <div id="images">
+            <img src="./images/product_detail.webp" alt="product detail" />
+            <img src="./images/product_detail.webp" alt="product detail" />
+            <img src="./images/product_detail.webp" alt="product detail" />
+            <img src="./images/product_detail.webp" alt="product detail" />
+          </div>
+          <div id="product_description">
+            <h1 id="product_name">Harry Potter: Slytherin</h1>
+            <h3 id="product_category">Jackets</h3>
+            <hr />
+            <h2>$120.99</h2>
+            <p>Please select a size.</p>
+            <div id="sizes">
+              <p>XS</p>
+              <p>S</p>
+              <p>M</p>
+              <p>L</p>
+              <p>XL</p>
+              <p>XXL</p>
+            </div>
+            <div id="product_quantity">
+              <p>Quantity</p>
+              <span>-</span><input type="number" /><span>+</span>
+            </div>
+            <div id="actions">
+              <button>Add to Cart</button>
+              <button>Add to Wishlist</button>
+            </div>
+
+            <div id="return_info">
+              <p>
+                This item is eligible for return under our easy 30 day return
+                policy. No questions asked.
+              </p>
+            </div>
+
+            <div id="long_description">
+              <h1>Product Details</h1>
+              <p class="title">Material & Care:</p>
+              <p>60% Cotton 40% Polyester</p>
+              <p>Dry Clean Only</p>
+              <p class="title">Country of Origin: India (and proud)</p>
+              <p class="title">Manufactured & Sold By:</p>
+              <p>The Souled Store Pvt. Ltd.</p>
+              <p>224, Tantia Jogani Industrial Premises</p>
+              <p>connect@thesouledstore.com</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="similar_products">
+        <h1>Similar Products</h1>
+        <div id="products_container">
+          <div id="products">
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
+
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
+
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
+
+            <div class="product">
+              <img src="/images/item1.webp" alt="Scooby Doo" />
+              <p class="product_title">Scooby Doo: Where Are You</p>
+              <hr />
+              <p class="description">Oversized T-shirts</p>
+              <p class="price">$20.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="need_help">
+          <h1>NEED HELP</h1>
+          <ul>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="users.html">Track Order</a></li>
+            <li><a href="hobby.html">Returns & Refunds</a></li>
+            <li><a href="posts.html">FAQs</a></li>
+            <li><a href="posts.html">My Account</a></li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h1>COMPANY</h1>
+          <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="users.html">Careers</a></li>
+            <li><a href="hobby.html">Stores Near Me</a></li>
+            <li><a href="posts.html">From the Soul</a></li>
+            <li><a href="posts.html">Souled Army</a></li>
+          </ul>
+        </div>
+
+        <div class="more_info">
+          <h1>MORE INFO</h1>
+          <ul>
+            <li><a href="index.html">T&C</a></li>
+            <li><a href="users.html">Privacy Policy</a></li>
+            <li><a href="hobby.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="miscellaneous">
+          <ul>
+            <li><a href="index.html">COD Available</a></li>
+            <li><a href="users.html">30 Days Easy Returns</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="social_media">
+        <h1>FIND US ON</h1>
+        <div>
+          <a href="https://www.facebook.com/"
+            ><img src="./images/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/instagram.png" alt="instagram"
+          /></a>
+          <a href="https://twitter.com/home?lang=en"
+            ><img src="./images/twitter.png" alt="twitter"
+          /></a>
+          <a href="https://www.linkedin.com/in/bhupesh-shrestha-04/"
+            ><img src="./images/linkedin.png" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <p>Copyright &copy; 2022 | Hobby Junction</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- library plugin used in hobby.js -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/go_to_top.js"></script>
+  </body>
+</html>
